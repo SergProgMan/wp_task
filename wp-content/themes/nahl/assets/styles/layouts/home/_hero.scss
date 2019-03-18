@@ -1,0 +1,26 @@
+.hero-section{
+  background-size: cover !important;
+  min-height: 660px;
+  background-repeat: no-repeat !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center !important;
+  @include media-breakpoint-down(md){
+    min-height: 450px;
+  }
+  @include media-breakpoint-down(xs){
+    min-height: 300px;
+  }
+}
+@media all and (-ms-high-contrast:none){
+  .hero-section {
+    padding-top: 10%;
+  }
+
+
+
+  *::-ms-backdrop, .hero-section {
+    padding-top: 10%;
+  }
+}

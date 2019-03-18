@@ -1,0 +1,130 @@
+.cards-section{
+  background-color: #F2E6D2;
+  &__container{
+    @include make-container();
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__row{
+    @include make-row();
+    margin: 0 -50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    top: -50px;
+
+    .card-wrapper{
+      @include make-col(3);
+      min-height: 430px;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      @include media-breakpoint-down(md){
+        @include make-col(6);
+        margin-top: 15px;
+      }
+      @include media-breakpoint-down(xs){
+        @include make-col(12);
+        min-height: 300px;
+      }
+      a{
+        display: flex;
+        justify-content: center;
+        width: 94%;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+      .card-item{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 29px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include media-breakpoint-down(xs){
+          width: 300px;
+        }
+        &:hover{
+          animation: zoom .5s;
+        }
+        &__top{
+          height: 50%;
+          h5{
+            color: #fff;
+          }
+          @include media-breakpoint-down(xs){
+            height: auto;
+          }
+        }
+        &__bottom {
+          @include media-breakpoint-down(xs){
+            height: auto;
+          }
+          p{
+            font-size: 17px;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+            line-height: 26px;
+            margin-bottom: 30px;
+          }
+          span{
+            display: inline-block;
+            padding: 15px 34px;
+            background-color: #fff;
+            text-transform: uppercase;
+            color: #013d75;
+            line-height: 1em;
+            font-weight: 700;
+            &:hover{
+              text-decoration: none;
+              background-color: #ebebeb;
+            }
+          }
+        }   
+       
+      }
+    }
+  }
+}
+
+.card-wrapper:nth-child(odd){
+  .card-item{
+    &__bottom{
+      p{
+        color: #6db7fc;
+      }
+    }
+  }
+}
+.card-wrapper:nth-child(even){
+  .card-item{
+    &__bottom{
+      p{
+        color: #fff;
+      }
+    }
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  75%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 991px){
+  h5{
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,30 @@
+/** Import Bootstrap functions */
+/* stylelint-disable */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$theme-colors: (
+  primary: #27ae60
+);
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{str-replace(str-replace(#{$navbar-dark-color}, "(", "%28"), ")", "%29")}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{str-replace(str-replace(#{$navbar-light-color}, "(", "%28"), ")", "%29")}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+$large: 1199px;
+$medium: 991px;
+$small: 767px;
+$extra-sm: 479px;
+$main-font: Lato, sans-serif;
+$header-bg: #be9e76;
+$header-inner: #3c90de;
+$nav-bg: #00487b;
+$circle-bottom-bg: #0a3d72;
+$circle-top-bg: #7cbefc;
+$featured-bg: #E8F4FF;
+$block-odd-color: #c5d1d9;
+$block-even-color: #e4edf3;
+$button-bg: #00487b;
+$about-header: #E8F4FF;
+$form-color: #faf3e7;
+$form-buttons: #7cbefc;
+$form-submit: #c0a067;
+$service-block: #0075c9;

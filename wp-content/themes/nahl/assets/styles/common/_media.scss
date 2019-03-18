@@ -1,0 +1,43 @@
+@media all and (max-width: 1300px){
+  .cards-section__row{
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 425px){
+  .site-content{
+    padding-top: 120px;
+  }
+  .cards-section__row{
+    position: static;
+
+  }
+  .card-wrapper:last-child{
+    margin-bottom: 15px;
+  }
+  .about-section {
+    padding-top: 15px;
+  }
+  .about-section__right--bottom p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .about-main-information p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  h2 {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+  .about-section__left a {
+    height: 60px;
+  }
+  .partners-section__container a img{
+    max-width: 100%;
+  }
+  .header__brand--top {
+    font-size: 30px;
+
+  }
+}
